@@ -1,0 +1,8 @@
+<h3>Auto Complete searches</h3>
+<p-autoComplete
+  [(ngModel)]="selectedCountry"
+  [suggestions]="filteredCountries"
+  (completeMethod)="filterCountry($event)"
+  field="name"
+  [minLength]="1"
+></p-autoComplete>
